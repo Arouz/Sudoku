@@ -1,0 +1,128 @@
+﻿<Page
+    x:Class="Sudoku.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sudoku"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#FF1B1B1B" Width="848" Height="800">
+
+    <Grid Name="GridA" Background="#FF1B1B1B">
+        <GridView x:Name="Grille" Margin="25,25,0,0" Background="WhiteSmoke"  Width="492" HorizontalAlignment="Left" VerticalAlignment="Top" IsItemClickEnabled="True" SelectionChanged="Grille_SelectionChanged">
+
+            <GridViewItem x:Name="C0" Content="0" Height="45" Width="45" FontSize="20" Margin="5,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C1" Content="1" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C2" Content="2" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C3" Content="3" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C4" Content="4" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C5" Content="5" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C6" Content="6" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C7" Content="7" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C8" Content="8" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+
+            <GridViewItem x:Name="C9" Content="9" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C10" Content="10" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C11" Content="11" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C12" Content="12" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C13" Content="13" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C14" Content="14" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C15" Content="15" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C16" Content="16" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C17" Content="17" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+
+            <GridViewItem x:Name="C18" Content="18" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C19" Content="19" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C20" Content="20" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C21" Content="21" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C22" Content="22" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C23" Content="23" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C24" Content="24" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C25" Content="25" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C26" Content="26" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+
+            <GridViewItem x:Name="C27" Content="27" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C28" Content="28" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C29" Content="29" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C30" Content="30" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C31" Content="31" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C32" Content="32" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C33" Content="33" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C34" Content="34" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C35" Content="35" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+
+            <GridViewItem x:Name="C36" Content="36" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C37" Content="37" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C38" Content="38" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C39" Content="39" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C40" Content="40" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C41" Content="41" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C42" Content="42" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C43" Content="43" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C44" Content="44" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+
+            <GridViewItem x:Name="C45" Content="45" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C46" Content="46" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C47" Content="47" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C48" Content="48" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C49" Content="49" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C50" Content="50" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C51" Content="51" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C52" Content="52" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C53" Content="53" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+
+            <GridViewItem x:Name="C54" Content="54" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C55" Content="55" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C56" Content="56" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C57" Content="57" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C58" Content="58" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C59" Content="59" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C60" Content="60" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C61" Content="61" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C62" Content="62" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+
+            <GridViewItem x:Name="C63" Content="63" FontSize="20" Width="45" Height="45" Margin="5,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C64" Content="64" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C65" Content="65" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C66" Content="66" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C67" Content="67" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Foreground="#FF1B1B1B" Background="#FFCBCBCB"/>
+            <GridViewItem x:Name="C68" Content="68" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C69" Content="69" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C70" Content="70" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+            <GridViewItem x:Name="C71" Content="71" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FF1B1B1B" Foreground="#FFCBCBCB"/>
+
+            <GridViewItem x:Name="C72" Content="72" FontSize="20" Width="45" Height="45" Background="#FF1B1B1B" Foreground="#FFCBCBCB" Margin="5,4,4,4"/>
+            <GridViewItem x:Name="C73" Content="73" FontSize="20" Width="45" Height="45" Background="#FF1B1B1B" Foreground="#FFCBCBCB" Margin="4,4,4,4"/>
+            <GridViewItem x:Name="C74" Content="74" FontSize="20" Width="45" Height="45" Background="#FF1B1B1B" Foreground="#FFCBCBCB" Margin="4,4,4,4"/>
+            <GridViewItem x:Name="C75" Content="75" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C76" Content="76" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C77" Content="77" FontSize="20" Width="45" Height="45" Margin="4,4,4,4" Background="#FFCBCBCB" Foreground="#FF1B1B1B"/>
+            <GridViewItem x:Name="C78" Content="78" FontSize="20" Width="45" Height="45" Background="#FF1B1B1B" Foreground="#FFCBCBCB" Margin="4,4,4,4"/>
+            <GridViewItem x:Name="C79" Content="79" FontSize="20" Width="45" Height="45" Background="#FF1B1B1B" Foreground="#FFCBCBCB" Margin="4,4,4,4"/>
+            <GridViewItem x:Name="C80" Content="80" FontSize="20" Width="45" Height="45" Background="#FF1B1B1B" Foreground="#FFCBCBCB" Margin="4,4,4,4"/>
+        </GridView>
+        <Button x:Name="BT_Backtracking" Content="Backtraking" Margin="537,62,0,0" VerticalAlignment="Top" Width="142" Click="BT_Backtracking_Click" Foreground="#FFCBCBCB"/>
+        <Button x:Name="BT_Afficher" Content="Afficher" Margin="537,25,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB"/>
+        <Button x:Name="BT_CDP" Content="CDP" Margin="25,758,0,0" VerticalAlignment="Top" Width="164" Foreground="#FFCBCBCB" Click="BT_CDP_Click"/>
+        <GridView x:Name="GV_Log" Margin="25,554,0,47" Background="#BFC9C9C9" HorizontalAlignment="Left" Width="492">
+            <GridViewItem Content="Champ des possibles" Width="489"/>
+        </GridView>
+        <Button x:Name="BT_CSU" Content="CSU" Margin="684,62,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB" Click="BT_CSU_Click"/>
+        <Button x:Name="BT_CC" Content="CC" Margin="684,99,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB" Click="BT_CC_Click"/>
+        <Button x:Name="BT_S1" Content="S1" Margin="684,136,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB" Click="BT_S1_Click"/>
+        <TextBox x:Name="TB_Logs" Margin="534,210,0,0" Text="" VerticalAlignment="Top" Height="543" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" Width="292"/>
+        <Button x:Name="BT_CDPRAZ" Content="RaZ" Margin="363,758,0,0" VerticalAlignment="Top" Width="154" Foreground="#FFCBCBCB" Click="BT_CDPRAZ_Click"/>
+        <Button x:Name="BT_CDPMAJ" Content="MaJ" Margin="194,758,0,0" VerticalAlignment="Top" Width="164" Foreground="#FFCBCBCB" Click="BT_CDPMAJ_Click"/>
+        <Button x:Name="BT_S2" Content="S2" Margin="684,173,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB" Click="BT_S2_Click"/>
+        <Button x:Name="BT_RAZLOGS" Content="RaZ Logs" Margin="534,758,0,0" VerticalAlignment="Top" Width="292" Foreground="#FFCBCBCB" Click="BT_RAZLOGS_Click"/>
+        <Button x:Name="BT_TQ" Content="TQ" Margin="684,25,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB" Click="BT_TQ_Click"/>
+        <Button x:Name="BT_SOLVE" Content="Résoudre" Margin="538,99,0,0" VerticalAlignment="Top" Width="142" Foreground="#FFCBCBCB" Click="BT_SOLVE_Click"/>
+        <ComboBox x:Name="CB_CDG" Width="492" Margin="25,517,0,0" SelectionChanged="CB_CDG_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <ComboBoxItem Content="Vide" Height="32" IsSelected="True" HorizontalAlignment="Stretch" Width="Auto" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="Facile" Height="32" HorizontalAlignment="Stretch" Width="Auto" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="Moyen" Height="32" Width="Auto" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="Difficile" Height="32" HorizontalAlignment="Stretch" Width="Auto" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="Très difficile" Height="32" HorizontalAlignment="Stretch" Width="Auto" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+    </Grid>
+</Page>
